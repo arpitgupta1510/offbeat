@@ -1,4 +1,4 @@
-<h1 align="center">Team 1000-7 Devjam Project Offbeat</h1>
+<h1 align="center">Offbeat</h1>
 <p align="center">
 </p>
 
@@ -38,8 +38,6 @@ Tech Stack - Android Studio, Kotlin, XML, Firebase, Volley Api (Http Library).
 </br></br>
 
 ## Contributors:
-
-Team Name: 1000-7
 
 * [Krishn Kant Agarwal](https://github.com/krishna2332002)
 * [Manglam Paliwal](https://github.com/manglam16)
