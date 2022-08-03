@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:focusable="true"
+    tools:context=".Activities.MessageRequests">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRequest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/requestMsgSentBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/msgboxcircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/timeChangeBtn">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/requestMsgSentBtnn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/requestMsgSentBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/requestMsgSentBtn"
+        app:layout_constraintTop_toTopOf="@+id/requestMsgSentBtn"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        app:tint="@color/white" />
+
+    <EditText
+        android:id="@+id/requestMsgBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Type message here.."
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="10"
+        android:padding="14dp"
+        android:shadowColor="@color/ltBlack"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHint="@color/vltBlack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/requestFileSendBtn"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_attach_file_24"
+        app:layout_constraintBottom_toBottomOf="@+id/requestMsgBox"
+        app:layout_constraintEnd_toEndOf="@+id/requestMsgBox"
+        app:layout_constraintTop_toTopOf="@+id/requestMsgBox" />
+
+
+    <Button
+        android:id="@+id/timeChangeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Time"
+        app:layout_constraintEnd_toStartOf="@+id/dateChangeBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestMsgBox" />
+
+    <Button
+        android:id="@+id/dateChangeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/requestMsgSentBtnn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/timeChangeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeChangeBtn" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/voiceMsg"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/cardView3"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/cardView3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/cardView3"-->
+    <!--        android:src="@drawable/ic_baseline_mic_24"-->
+    <!--        app:tint="@color/teal_200" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

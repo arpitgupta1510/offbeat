@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="?attr/backgroundColor"
+    android:id="@+id/groupNamesSection"
+android:paddingLeft="10dp">
+
+<com.makeramen.roundedimageview.RoundedImageView
+    android:id="@+id/collegeImageShow"
+    android:layout_width="50dp"
+    android:layout_height="55dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:scaleType="fitCenter"
+    android:src="@drawable/user2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:riv_border_color="#333333"
+    app:riv_corner_radius_bottom_left="30dp"
+    app:riv_corner_radius_bottom_right="30dp"
+    app:riv_corner_radius_top_left="30dp"
+    app:riv_corner_radius_top_right="30dp"
+    app:riv_mutate_background="true"
+    android:focusable="true" />
+
+    <TextView
+        android:id="@+id/collegeNameShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="College Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/collegeImageShow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/collegeIdShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="College Id"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/collegeImageShow"
+        app:layout_constraintTop_toBottomOf="@+id/collegeNameShow" />
+
+<View
+    android:id="@+id/view9"
+    android:layout_width="wrap_content"
+    android:layout_height="0.4dp"
+    android:background="@color/black"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

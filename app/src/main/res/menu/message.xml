@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mediaBox"
+        android:title="Media,contacts" />
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/ic_baseline_add_ic_call_24"
+        android:title="Call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/video_call"
+        android:title="Video"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mute"
+        android:title="Mute Notifications" />
+    <item
+        android:id="@+id/messageRequest"
+        android:title="Message Request" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|withText" />
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/clear"
+                android:title="Clear Chats" />
+            <item
+                android:id="@+id/exportChats"
+                android:title="Export Chats" />
+            <item
+                android:id="@+id/reportMember"
+                android:title="Report" />
+
+
+        </menu>
+    </item>
+</menu>

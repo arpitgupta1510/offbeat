@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="60dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/recievebox"
+    android:elevation="100dp"
+    android:maxWidth="360dp"
+    android:maxHeight="350dp"
+    android:minWidth="80dp"
+    android:minHeight="30dp">
+    <TextView
+        android:id="@+id/recieveMsgRepliedTo"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Reply"
+        android:background="@drawable/sender_reply"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="clip_horizontal|fill_horizontal"
+        android:layout_marginEnd="12dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:maxWidth="320dp"
+        android:foregroundGravity="fill_horizontal"
+        android:gravity="left"
+        android:paddingStart="6dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="4dp"
+        tools:ignore="RtlSymmetry,SmallSp" />
+
+
+    <ImageView
+        android:id="@+id/ImageRecieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="10dp"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recieveMsgRepliedTo" />
+
+    <TextView
+        android:id="@+id/msgRecieveBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="320dp"
+        android:layout_gravity="clip_horizontal|fill_horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:foregroundGravity="fill_horizontal"
+        android:gravity="start"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/msgRecieveTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImageRecieve" />
+
+    <TextView
+        android:id="@+id/msgRecieveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="12dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="RtlSymmetry,SmallSp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

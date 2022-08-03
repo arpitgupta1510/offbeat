@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/comment"
+        android:title="Chats" />
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notifications"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/status"
+        android:icon="@drawable/status"
+        android:title="Status" />
+    <item
+        android:id="@+id/posts"
+        android:icon="@drawable/posts"
+        android:title="Posts" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Profile" />
+</menu>

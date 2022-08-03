@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/friends"
+        android:title="Friends" />
+    <item
+        android:id="@+id/starredMessages"
+        android:title="Starred Messages" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/deleteChats"
+        android:title="Delete Chats" />
+
+</menu>

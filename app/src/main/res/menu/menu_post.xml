@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/friends"
+        android:title="Friends" />
+    <item
+        android:id="@+id/starredPosts"
+        android:title="Starred Posts" />
+    <item
+        android:id="@+id/deletePosts"
+        android:title="Delete Posts" />
+</menu>

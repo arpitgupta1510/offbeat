@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/backgroundColor"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FormCollege">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="?attr/backgroundColor"
+        android:elevation="200dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <LinearLayout
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor"
+            android:layout_gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/clgUid"
+                android:layout_width="309dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/use"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="College Uid"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+            <EditText
+                android:id="@+id/clgName"
+                android:layout_width="309dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/use"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="College Name"
+                android:layout_marginBottom="15dp"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/clgImage"
+        android:layout_width="116dp"
+        android:layout_height="117dp"
+        android:background="@drawable/circle"
+        android:clickable="true"
+        android:elevation="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user2"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_border_color="#333333"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="200dp"
+        android:text="Update"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/openCamera"
+        android:title="Camera"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/openfiles"
+        android:title="Files"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/openDocs"
+        android:title="Documents"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/openImages"
+        android:title="Images"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/openVideos"
+        android:title="Videos"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/myPosts"
+        android:icon="@drawable/home2"
+        android:title="Posts" />
+    <item
+        android:id="@+id/addCollege"
+        android:icon="@drawable/ic_baseline_group_add_24"
+        android:title="Join Group" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+    <item
+        android:id="@+id/myLocation"
+        android:icon="@drawable/ic_baseline_share_location_24"
+        android:title="Location" />
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/rateUs"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+
+</menu>

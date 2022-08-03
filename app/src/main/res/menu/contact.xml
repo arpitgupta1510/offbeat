@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/inviteFriend"
+        android:title="Invite Friend" />
+    <item
+        android:id="@+id/helpGroup"
+        android:title="Help" />
+    <item
+        android:id="@+id/searchGroupMember"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always" />
+</menu>
