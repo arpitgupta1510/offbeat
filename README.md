@@ -39,6 +39,6 @@ Tech Stack - Android Studio, Kotlin, XML, Firebase, Volley Api (Http Library).
 
 ## Contributors:
 
-* [Krishn Kant Agarwal](https://github.com/krishna2332002)
+* [Arpit Gupta](https://github.com/arpitgupta1510)
 * [Manglam Paliwal](https://github.com/manglam16)
 * [Pritish Kumar](https://github.com/pritishkr)
